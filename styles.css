@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     padding-top: 200px;
+    overflow: hidden;
 }
 
 h1 {
