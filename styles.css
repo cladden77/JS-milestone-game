@@ -1,0 +1,37 @@
+body {
+    background-image: url('./assets/ring-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 200px;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+}
+
+.selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 7em;
+    transition: 100ms;
+    padding: 50px;
+}
+
+.selection:hover {
+    transform: scale(1.2);
+}
+
+.result-score {
+    margin-left: .1em;
+    font-size: 5em;
+    color: #333;
+}
+
+.result-selection {
+    font-size: 4em;
+}
