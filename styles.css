@@ -7,6 +7,12 @@ body {
     padding-top: 200px;
 }
 
+h1 {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .selections {
     display: flex;
     justify-content: center;
@@ -33,5 +39,11 @@ body {
 }
 
 .result-selection {
-    font-size: 4em;
+    font-size: 5em;
+    opacity: .5;
+}
+
+.result-selection.winner {
+    font-size: 6em;
+    opacity: 1;
 }

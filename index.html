@@ -17,42 +17,47 @@
 </head>
 <body>
     <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h1>Choose your move</h1>
+            </div>
+        </div>
         <div class="row">
             <div class="col">
                 <div class="selections">
-                    <button class="selection">
+                    <button class="selection" data-selection="rock">
                         👊
                     </button>
-                    <button class="selection">
+                    <button class="selection" data-selection="paper">
                         ✋
                     </button>
-                    <button class="selection">
+                    <button class="selection" data-selection="scissors">
                         ✌️
                     </button>
                 </div>
             </div>
         </div>
 
-        <div class="row justify-content-center mt-5 results">
+        <div class="row justify-content-center mt-2 results">
             <div class="col text-center">
-                <h2></h2>You
+                <h2>You</h2>
                 <span class="result-score">0</span>
             </div>
 
             <div class="col text-center">
-                Computer
+                <h2>Computer</h2>
                 <span class="col result-score">0</span>
             </div>
         </div>
 
-        <div class="row justify-content-center">
+        <!-- <div class="row justify-content-center">
             <div class="col text-center">
                 <div class="result-selection winner">👊</div>
             </div>
             <div class="col text-center">
-                <div class="result-selection">✋</div>
+                <div class="result-selection">✌️</div>
             </div>
-        </div>
+        </div> -->
     </div>
 </body>
 </html>
