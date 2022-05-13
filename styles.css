@@ -39,6 +39,18 @@ h2 {
     transform: scale(1.2);
 }
 
+.results {
+    margin-top: 1rem;
+}
+
+.restart {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
 .result-score {
     margin-left: .1em;
     font-size: 5em;
@@ -48,6 +60,8 @@ h2 {
 .result-selection {
     font-size: 5em;
     opacity: .5;
+    justify-content: center;
+    text-align: center;
 }
 
 .result-selection.winner {

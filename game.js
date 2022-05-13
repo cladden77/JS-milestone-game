@@ -56,11 +56,14 @@ function incrementScore(scoreSpan) {
 // creates a div to display the result and applies a 'winner'
 // class that shows the winner selection larger than that of the loser
 function addSelectionResult(selection, winner) {
+    const restart = document.querySelector('.restart');
+    console.log(restart)
     const div = document.createElement('div');
-    div.innerText = selection.emoji
-    div.classList.add('result-selection')
-    if (winner) div.classList.add('winner')
-    finalColumn.after(div)
+    div.innerText = selection.emoji;
+    div.classList.add('result-selection');
+    if (winner) div.classList.add('winner');
+    // finalColumn.after(div)
+    restart.append(div)
 }
 
 // checks to see if the computer's random selection beats the user's selection
@@ -75,7 +78,8 @@ function randomSelection() {
 }
 
 function clearScore(scoreSpan) {
+    const restart = document.querySelector('.restart');
+    restart.innerHTML = '';
     document.querySelector('[data-computer-score]').innerText = 0;
     document.querySelector('[data-your-score]').innerText = 0;
 }
-
