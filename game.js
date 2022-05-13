@@ -75,9 +75,6 @@ function randomSelection() {
 }
 
 function clearScore(scoreSpan) {
-
-
-
     document.querySelector('[data-computer-score]').innerText = 0;
     document.querySelector('[data-your-score]').innerText = 0;
 }
