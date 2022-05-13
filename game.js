@@ -32,6 +32,9 @@ selectionButtons.forEach(selectionButton => {
     })
 })
 
+// event listener for clear button
+document.querySelector('[data-clear-button]').addEventListener("click", clearScore);
+
 // creating the functionality of winning or losing and displays score
 function makeSelection(selection) {
     const computerSelection = randomSelection()
@@ -69,5 +72,13 @@ function isWinner(selection, opponentSelection) {
 function randomSelection() {
     const randomIndex = Math.floor(Math.random() * selections.length)
     return selections[randomIndex]
+}
+
+function clearScore(scoreSpan) {
+
+
+
+    document.querySelector('[data-computer-score]').innerText = 0;
+    document.querySelector('[data-your-score]').innerText = 0;
 }
 

@@ -4,7 +4,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    padding-top: 200px;
+    padding-top: 100px;
     overflow: hidden;
 }
 
@@ -47,4 +47,17 @@ h1 {
 .result-selection.winner {
     font-size: 6em;
     opacity: 1;
+}
+
+.clear-button {
+    border: none;
+    border-radius: 10px;
+    background-color: #58CBD0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 100ms;
+}
+
+.clear-button:hover {
+    transform: scale(1.05);
 }
