@@ -1,5 +1,9 @@
+@import "variables";
+@import "btnConfig";
+
+//General Styling
 body {
-    background-image: url('./assets/ring-bg.jpg');
+    background-image: url('/assets/ring-bg.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,13 +13,13 @@ body {
 }
 
 h1 {
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
+    color: $white;
+    font-weight: $bold;
+    text-transform: $uppercase;
 }
 
 h2 {
-    color: #F2DABE;
+    color: $secondary-color;
     font-size: 1em;
     letter-spacing: .25em;
 }
@@ -27,7 +31,7 @@ h2 {
 
 .selection {
     background: none;
-    border: none;
+    border: $border-none;
     outline: none;
     cursor: pointer;
     font-size: 7em;
@@ -54,7 +58,7 @@ h2 {
 .result-score {
     margin-left: .1em;
     font-size: 5em;
-    color: #333;
+    color: $tertiary;
 }
 
 .result-selection {
@@ -64,20 +68,9 @@ h2 {
     text-align: center;
 }
 
-.result-selection.winner {
+.result-selection {
+    .winner {
     font-size: 6em;
     opacity: 1;
-}
-
-.clear-button {
-    border: none;
-    border-radius: 10px;
-    background-color: #58CBD0;
-    padding: 10px 30px;
-    color: #fff;
-    transition: 100ms;
-}
-
-.clear-button:hover {
-    transform: scale(1.05);
+    }
 }
